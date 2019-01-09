@@ -1,10 +1,10 @@
 <?php
 
-namespace Revolta\StaticDiBundle;
+namespace RvltDigital\StaticDiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class RevoltaStaticDiBundle extends Bundle
+class RvltDigitalStaticDiBundle extends Bundle
 {
     public function boot()
     {

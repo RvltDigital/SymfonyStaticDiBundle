@@ -1,6 +1,6 @@
 <?php
 
-namespace Revolta\StaticDiBundle;
+namespace RvltDigital\StaticDiBundle;
 
 use Doctrine\ORM\EntityManager;
 use Psr\Container\ContainerInterface;
