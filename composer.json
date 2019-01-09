@@ -1,0 +1,17 @@
+{
+  "name": "revolta/symfony-static-di-bundle",
+  "type": "symfony-bundle",
+  "require": {
+    "symfony/framework-bundle": "^4.1",
+    "symfony/yaml": "^4.1",
+    "symfony/orm-pack": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Revolta\\StaticDiBundle\\": ""
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.14"
+  }
+}
