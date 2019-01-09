@@ -1,5 +1,5 @@
 {
-  "name": "revolta/symfony-static-di-bundle",
+  "name": "rvlt-digital/symfony-static-di-bundle",
   "type": "symfony-bundle",
   "require": {
     "symfony/framework-bundle": "^4.1",

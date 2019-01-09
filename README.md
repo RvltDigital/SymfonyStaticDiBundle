@@ -1,3 +1,3 @@
 # Installation
 
-`composer require revolta/symfony-static-di-bundle`
+`composer require rvlt-digital/symfony-static-di-bundle`
