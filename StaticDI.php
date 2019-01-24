@@ -98,6 +98,11 @@ final class StaticDI
         return $requestStack->getCurrentRequest();
     }
 
+    public static function isDebug(): bool
+    {
+        return self::getParameter('kernel.debug');
+    }
+
     private static function checkDi(): void
     {
         if (self::$di === null) {
