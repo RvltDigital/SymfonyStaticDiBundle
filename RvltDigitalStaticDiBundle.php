@@ -8,7 +8,6 @@ class RvltDigitalStaticDiBundle extends Bundle
 {
     public function boot()
     {
-        parent::boot();
         StaticDI::setContainer($this->container);
     }
 }
