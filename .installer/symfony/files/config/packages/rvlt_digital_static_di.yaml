@@ -1,6 +1,0 @@
-rvlt_digital_static_di:
-  # If set to true, all services will be marked as public so that you can fetch them from container
-  make_services_public: false
-  # List of services that will be made public by the container
-  public_services:
-#    - security.helper
