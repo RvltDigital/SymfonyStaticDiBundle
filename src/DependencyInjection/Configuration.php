@@ -28,6 +28,10 @@ class Configuration implements ConfigurationInterface
                     ->defaultFalse()
                     ->info('If set to true, all services will be marked as public so that you can fetch them from container')
                 ->end()
+                ->arrayNode('public_services')
+                    ->info('List of services that will be made public by the container')
+                    ->scalarPrototype()->end()
+                ->end()
             ->end();
 
         return $treeBuilder;

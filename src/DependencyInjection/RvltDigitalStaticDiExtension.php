@@ -17,6 +17,7 @@ class RvltDigitalStaticDiExtension extends Extension
     public function load(array $configs, ContainerBuilder $container)
     {
         $configs = $this->processConfiguration(new Configuration(), $configs);
-        $container->setParameter('rvlt_digital.internal.static_di.services_public', $configs['make_services_public'] ?? false);
+        $container->setParameter('rvlt_digital.internal.static_di.all_services_public', $configs['make_services_public'] ?? false);
+        $container->setParameter('rvlt_digital.internal.static_di.public_services', $configs['public_services'] ?? []);
     }
 }
