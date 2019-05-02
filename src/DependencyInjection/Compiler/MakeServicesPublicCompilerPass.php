@@ -4,6 +4,7 @@ namespace RvltDigital\StaticDiBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
+use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 
 class MakeServicesPublicCompilerPass implements CompilerPassInterface
 {
@@ -14,9 +15,13 @@ class MakeServicesPublicCompilerPass implements CompilerPassInterface
         }
 
         foreach ($container->getServiceIds() as $serviceId) {
-            $definition = $container->getDefinition($serviceId);
-            if (!$definition->isPublic()) {
-                $definition->setPublic(true);
+            try {
+                $definition = $container->getDefinition($serviceId);
+                if (!$definition->isPublic()) {
+                    $definition->setPublic(true);
+                }
+            } catch (ServiceNotFoundException $e) {
+                // ignore, continue
             }
         }
     }
