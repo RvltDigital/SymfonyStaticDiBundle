@@ -3,4 +3,4 @@ rvlt_digital_static_di:
   make_services_public: false
   # List of services that will be made public by the container
   public_services:
-#    - Symfony\Component\Security\Core\Security
+#    - security.helper
